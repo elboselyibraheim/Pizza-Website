@@ -2,8 +2,8 @@
 :root {
   --main-color: rgb(245, 71, 72);
   --sec-color: rgb(254, 245, 245);
-  --main-fonts: 'Cabin', sans-serif;
-  --fs:1em;
+  --main-fonts: "Cabin", sans-serif;
+  --fs: 1em;
 }
 
 /* END VARIABLES */
@@ -58,55 +58,76 @@ body {
 .header {
   display: flex;
 }
-.header .container {
+.back-gr {
+  background: linear-gradient(180deg, rgb(254, 243, 243), rgb(255, 254, 254));
+}
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
-.header .container .logo a {
+/* @media (max-width: 698px) {
+  header .container .links {
+    display: none;
+  }
+  header .container .btn {
+    display: none;
+  }
+} */
+header .container .logo a {
+  width: 100%;
   color: black;
   text-decoration: none;
 }
-.header .container .links ul {
+header .container .links ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header .container .links li {
+header .container .links li {
   list-style: none;
   padding-right: 2rem;
 }
-.header .container .links li a {
+header .container .links li a {
   text-decoration: none;
+  display: block;
   color: black;
-  font-size:var(--fs)
+  font-size: var(--fs);
+  transition: 3s;
 }
 
-.header .container .links li:first-child a {
+header .container .links li:first-child a {
   color: var(--main-color);
-  font-size: var(--fs)
+  font-size: var(--fs);
 }
 
-.header .container .btn {
+header .container .btn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
-.header .container .btn a:first-child button {
+header .container .btn a:first-child button {
   border: 1px solid var(--main-color);
   color: var(--main-color);
   background-color: white;
 }
-.header .container .btn a:nth-child(2) button {
+header .container .btn a:nth-child(2) button {
   background-color: var(--main-color);
   color: white;
 }
-.header .container button {
+header .container button {
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  }
+}
+
 /* END OUR MENU */
+
+/* Quality Food  */
+
+
+/* Quality Food  */
