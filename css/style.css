@@ -55,9 +55,7 @@ body {
 /* END GLOBAL RULS */
 
 /* SATRT HEADER */
-.header {
-  display: flex;
-}
+
 .back-gr {
   background: linear-gradient(180deg, rgb(254, 243, 243), rgb(255, 254, 254));
 }
@@ -65,16 +63,8 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
-/* @media (max-width: 698px) {
-  header .container .links {
-    display: none;
-  }
-  header .container .btn {
-    display: none;
-  }
-} */
+
 header .container .logo a {
   width: 100%;
   color: black;
@@ -85,7 +75,11 @@ header .container .links ul {
   align-items: center;
   justify-content: center;
 }
-
+@media (max-width: 698px) {
+  header .container .links {
+    display: none;
+  }
+}
 header .container .links li {
   list-style: none;
   padding-right: 2rem;
@@ -131,38 +125,82 @@ header .container button {
 
 .quality {
   display: flex;
+  margin-top: 75px;
 }
 .quality .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+@media (max-width: 699px) {
+  .quality .container {
+    flex-direction: column;
+  }
+  .quality .container .plat-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .quality .container .plat-text {
   margin-right: 10px;
 }
-.quality .container .plat-text p {
-  font-size: 1em;
+.quality .container .plat-text p:first-of-type {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--main-color);
+  background-color: var(--sec-color);
+}
+.quality .container .plat-text p:last-of-type {
+  font-size: 1rem;
+  color: rgb(184, 182, 182);
+  line-height: 1.6;
+}
+.quality .container .plat-text span {
+  color: var(--main-color);
 }
 .quality .container .plat-text h1 {
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
+}
+.quality .container .plat-text form input {
+  width: 250px;
+  height: 40px;
+  margin-bottom: 10px;
+  border-color: rgb(245, 71, 72);
+  border-radius: 5px;
+}
+.quality .container .plat-text button {
+  background-color: var(--main-color);
+  color: white;
 }
 
 .quality .review img {
   margin-top: 20px;
   width: 50%;
 }
-
-.quality .plat-imag  {
+.quality .plat-imag {
   width: 100%;
   background-color: var(--main-color);
   border-radius: 25px;
-  
+  padding-bottom: 5px;
+  margin-left: 30px;
 }
+
 .quality .plat-imag img {
   width: 80%;
-  margin:10px 30px 0;
+  margin-top: 10px 30px;
+  margin-left: 30px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media (max-width: 590px) {
+  .quality .plat-imag {
+    display: none;
+  }
 }
 
 /* Quality Food  */
