@@ -129,5 +129,40 @@ header .container button {
 
 /* Quality Food  */
 
+.quality {
+  display: flex;
+}
+.quality .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quality .container .plat-text {
+  margin-right: 10px;
+}
+.quality .container .plat-text p {
+  font-size: 1em;
+}
+.quality .container .plat-text h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.quality .review img {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.quality .plat-imag  {
+  width: 100%;
+  background-color: var(--main-color);
+  border-radius: 25px;
+  
+}
+.quality .plat-imag img {
+  width: 80%;
+  margin:10px 30px 0;
+}
 
 /* Quality Food  */
