@@ -2,7 +2,7 @@
 :root {
   --main-color: rgb(245, 71, 72);
   --sec-color: rgb(254, 245, 245);
-  --main-fonts: "Cabin", sans-serif;
+  --main-fonts: "Noto Serif Display", serif;
   --fs: 1em;
 }
 
@@ -90,6 +90,11 @@ header .container .logo a {
   justify-items: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .header .container .icon {
+    display: none;
+  }
+}
 .header .container .icon:hover {
 }
 
@@ -118,9 +123,9 @@ header .container .logo a {
   align-items: center;
   gap: 1.5rem;
 }
-@media (max-width: 698px) {
+@media (max-width: 768px) {
   .header .container .btn a button {
-    display: ;
+    display: none;
   }
 }
 
@@ -185,38 +190,42 @@ header .container .logo a {
 }
 .quality .container .plat-text h1 {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 600px;
 }
-.quality .container .plat-text form input {
+.quality .search {
+  max-width: 250px;
+  position: relative;
+}
+.quality .search button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-left: 145px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.fa-angle-right:before {
+  content: "\f105";
+  margin-left: 5px;
+}
+.quality .search form input {
+  padding: 5px 10px;
   width: 250px;
   height: 40px;
   margin-bottom: 10px;
   border-color: rgb(245, 71, 72);
-  border-radius: 5px;
-}
-.quality .container .plat-text button {
-  background-color: var(--main-color);
-  color: white;
+  border-radius: 8px;
+  position: absolute;
+  background-color: transparent;
 }
 
-.quality .review img {
-  margin-top: 20px;
-  width: 50%;
-}
-.quality .plat-imag {
-  width: 100%;
-  background-color: var(--main-color);
-  border-radius: 25px;
-  padding-bottom: 5px;
-  margin-left: 30px;
+.quality .search img {
+  max-width: 250px;
 }
 
 .quality .plat-imag img {
-  width: 80%;
-  margin-top: 10px 30px;
-  margin-left: 30px;
-  align-items: flex-end;
-  justify-content: flex-end;
+  max-width: 350px;
 }
 @media (max-width: 590px) {
   .quality .plat-imag {
@@ -225,3 +234,82 @@ header .container .logo a {
 }
 
 /* Quality Food  */
+
+/*START Spicial Offer */
+
+.spicial .container {
+  background-color: var(--sec-color);
+  margin-top: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spicial .container .spicial-image img {
+  width: 400px;
+  margin: 10px;
+}
+.spicial .spicial-text {
+  margin-left: 25px;
+}
+.spicial .spicial-text h2 {
+  font-size: 2.5rem;
+  font-family: var(--main-fonts);
+}
+.spicial .spicial-text p {
+  font-size: 12px;
+  font-family: var(--main-fonts);
+  line-height: 1.7;
+  color: gray;
+}
+.spicial .spicial-text button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: white;
+  border: none;
+  background-color: var(--main-color);
+}
+
+/* END Spicial Offer */
+
+/* START  Our Menu */
+.menu .container {
+  text-align: center;
+  margin-top: 100px;
+  max-width: 600px;
+}
+
+.menu .container .menu-text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.menu .container .menu-text:last-child p {
+  font-size: 1.5rem;
+  color: lightslategray;
+}
+
+/* start Our Menu-Cards */
+.dich-cards .container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.dich-cards .container .dich-card {
+  position: relative;
+  width: 500px;
+  height: 700px;
+  background-color: var(--sec-color);
+}
+.dich-cards .container .dich-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* End Our Menu-Cards */
