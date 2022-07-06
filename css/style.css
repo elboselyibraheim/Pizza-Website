@@ -1,6 +1,6 @@
 /* START VARIABLES  */
 :root {
-  --main-color: rgb(245, 71, 72);
+  --main-color: rgb(41, 195, 223);
   --sec-color: rgb(254, 245, 245);
   --main-fonts: "Noto Serif Display", serif;
   --fs: 1em;
@@ -134,10 +134,25 @@ header .container .logo a {
 }
 
 .header .container button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
+  outline: none;
+}
+.header .container button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(15, 159, 255, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 .header .container .btn a:first-child button {
@@ -208,20 +223,25 @@ header .container .logo a {
 }
 
 .quality .search {
-  max-width: 250px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .quality .search button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
   background-color: var(--main-color);
-  color: #fff;
-  width: 120px;
-  padding: 10px 20px;
   border: none;
-  margin-left: 159px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
+  outline: none;
 }
 
 .fa-angle-right:before {
@@ -229,24 +249,25 @@ header .container .logo a {
   margin-left: 5px;
 }
 
-.quality .search form input {
-  padding: 5px 10px;
-  width: 280px;
-  height: 40px;
-  margin-bottom: 10px;
-  border-color: rgb(245, 71, 72);
-  border-radius: 8px;
-  position: absolute;
+/* .quality .search form input {
+  min-height: 50px;
+  max-width: 150px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #5e4dcd;
+  border-radius: 6px 0 0 6px;
   background-color: transparent;
-}
+} */
 
 .quality .search img {
   max-width: 250px;
 }
 .quality .plat-imag img {
-  max-width: 350px;
-  height: 350px;
+  max-width: 500px;
   margin-bottom: 13%;
+  border: none;
+  border-radius: 100px;
 }
 
 @media (max-width: 590px) {
